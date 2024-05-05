@@ -37,7 +37,7 @@ def convert_date(row):
 def hidden_number(row):
     """Счет 43241152692663622869"""
     if row is None:
-        return "Не определено"
+        return "Нет данных"
     card_data = row.split(' ')
     card_number = card_data.pop(-1)
     if row.lower().startswith("счет"):
