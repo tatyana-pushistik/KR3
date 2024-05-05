@@ -17,4 +17,6 @@ def get_EXECUTED_data(json_data):
     return(EXECUTED_data)
 
 
-
+def get_top_row(EXECUTED_data, top_row):
+    top_row_data = sorted(EXECUTED_data, key=lambda operation: operation["date"], reverse=True)
+    return top_row_data[:top_row]
